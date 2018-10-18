@@ -1,0 +1,195 @@
+/* Universal Styling */
+html, body {
+	color: #4a4a4a;
+	font-family: 'Open Sans', sans-serif;
+}
+.vh-100 {
+	height: 100%;
+}
+h2 {
+	font-size: 3rem;
+}
+.btn-primary {
+	background-color: #f13f50;
+	border-style: none;
+	border-radius: none;
+	font-size: 0.95rem;
+	text-transform: uppercase;
+	padding: 0.8rem 2rem;
+	margin-top: 2rem;
+}
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #e5303e;
+}
+@media only screen and (max-width: 470px) {
+	h2 {
+		font-size: 2rem;
+	}
+}
+/* Navigation Bar */
+header {
+    background: transparent;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+	top: -5rem;
+}
+
+a.navbar-brand {
+	color: #fff;
+	text-shadow: 0 0 20px rgba(0,0,0,.2);
+	font-size: 1.75rem;
+	margin-top: 1.25rem;
+	margin-left: 2.5rem;
+}
+@media only screen and (max-width: 470px) {
+	a.navbar-brand {
+		margin-top: 1rem;
+		margin-left: 2rem;
+	}
+}
+/* Jumbotron Welcome Section */
+.jumbotron {
+	background: url("../images/banner.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.jumbotron .bannerContentWrapper h1 {
+	font-size: 6rem;
+}
+.jumbotron .bannerContentWrapper p {
+	font-size: 1.2rem;
+}
+.jumbotron .smallTextContentWrapper p {
+	font-size: 1rem;
+}
+@media only screen and (max-width: 470px) {
+	.jumbotron {
+		background: url("../images/banner.jpg") no-repeat center center scroll;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+	.jumbotron .bannerContentWrapper h1 {
+		font-size: 4rem;
+	}
+	.jumbotron .bannerContentWrapper p {
+		font-size: 1rem;
+	}
+	.jumbotron .smallTextContentWrapper p {
+		font-size: 0.7rem;
+	}
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  .jumbotron {
+		  background: url("../images/banner.jpg") no-repeat center center scroll;
+		  background-size: cover;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+	  }
+}
+/* Product Section */
+.productSection {
+	text-align: center;
+}
+.productSection h2 {
+	margin-top: 4rem;
+}
+.image-container {
+	padding-bottom: 5rem;
+}
+.image-container img {
+	width: 100%;
+	transition: transform 500ms;
+}
+.image-container img:hover {
+	transform: scale(1.1);
+}
+@media only screen and (max-width: 470px) {
+	.image-container {
+		width: 100%;
+	}
+}
+/* SignUp Section */
+.signUpSection {
+	text-align: center;
+	background: url("../images/signup.jpg") no-repeat center top fixed;
+	background-size: cover;
+	height: 25rem;
+	color: #fff;
+}
+@media only screen and (max-width: 470px) {
+	.signUpSection {
+		background: url("../images/signup.jpg") no-repeat center top scroll;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  .signUpSection {
+		background: url("../images/signup.jpg") no-repeat center top scroll;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	  }
+}
+/* Services Section */
+.servicesSection {
+	text-align: center;
+}
+.servicesSection h2 {
+	margin-top: 3rem;
+}
+.servicesSection .row {
+	padding: 0 12rem 5rem 12rem;
+	margin-top: 2.5rem;
+}
+.servicesSection i {
+	margin-bottom: 1rem;
+}
+@media only screen and (max-width: 470px) {
+	.servicesSection .row {
+		padding: 0 0.5rem;
+	}
+	.servicesSection h3 {
+		font-size: 1.2rem;
+	}
+}
+/* Footer Section */
+footer {
+	height: 5rem;
+	background-color: #000;
+	color: #fff;
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+@media only screen and (max-width: 470px) {
+	footer {
+		text-align: center;
+	}
+}
